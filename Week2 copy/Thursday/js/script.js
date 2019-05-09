@@ -17,7 +17,7 @@
 // }
 
 
-// SCRIPT 2
+// SCRIPT 2: See Richard's version on github; he used a function and accounted for invalid year entry
 // var currentYear = 2019;
 // var drinkAge = 20;
 // var yearBorn = parseInt(prompt("In what year were you born?"));
@@ -39,7 +39,7 @@ var toDoList = [];
 function addItem(){
   var newItem = prompt("What do you want to add?");
   toDoList.push(newItem);
-  
+
   console.log(toDoList);
 }
 
