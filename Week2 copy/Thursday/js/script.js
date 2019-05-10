@@ -34,30 +34,37 @@
 // }
 
 // SCRIPT 3: To Do List
-var toDoList = [];
+// var taskList = [];
+//
+// function addToList(){
+//   var listItem = prompt("Add a task to your to do list");
+//   if (listItem.length > 0){
+//       document.getElementById("taskList").innerHTML += "<li>" + listItem + "</li>";
+//       console.log(listItem);
+//       taskList.push(listItem);
+//       console.log(taskList);
+//     } else {
+//       console.log("Please make sure you input a value");
+//     }
+// }
 
+<<<<<<< HEAD
 function addItem(){
   var newItem = prompt("What do you want to add?");
   toDoList.push(newItem);
 
   console.log(toDoList);
 }
+=======
+//SCRIPT 4
+var numberList = [210, 10, 49, 155, 234, 448, 12];
+>>>>>>> 8a7e6dc0aca28df6e1edebfcb72e314a8c57f161
 
+var biggestNumber = 0;
 
-// document.write("<ul>")
-//     for (var i = 0; i < days.length; i++) {
-//       document.write("<li>" + days[i]);
-//         document.write("<ul>");
-//           if(tasks[i].length === 0){
-//             document.write("<li>Well done! You have no tasks today.</li>");
-//           } else{
-//             for (var a = 0; a < tasks[i].length; a++) {
-//               document.write("<li>" + tasks[i][a] + "</li>")
-//             }
-//
-//           }
-//
-//         document.write("</ul>");
-//       document.write("</li>");
-//     }
-// document.write("</ul>");
+for (var i = 0; i < numberList.length; i++) {
+  if (numberList[i] > biggestNumber) {
+    biggestNumber = numberList[i];
+  }
+}
+console.log("The biggest number is " + biggestNumber);
