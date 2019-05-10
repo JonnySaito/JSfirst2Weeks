@@ -48,23 +48,43 @@
 //     }
 // }
 
-<<<<<<< HEAD
-function addItem(){
-  var newItem = prompt("What do you want to add?");
-  toDoList.push(newItem);
 
-  console.log(toDoList);
-}
-=======
+// function addItem(){
+//   var newItem = prompt("What do you want to add?");
+//   toDoList.push(newItem);
+//
+//   console.log(toDoList);
+// }
+
+
 //SCRIPT 4
-var numberList = [210, 10, 49, 155, 234, 448, 12];
->>>>>>> 8a7e6dc0aca28df6e1edebfcb72e314a8c57f161
+// var numberList = [210, 10, 49, 155, 234, 448, 12];
+//
+// var biggestNumber = 0;
+//
+// for (var i = 0; i < numberList.length; i++) {
+//   if (numberList[i] > biggestNumber) {
+//     biggestNumber = numberList[i];
+//   }
+// }
+// console.log("The biggest number is " + biggestNumber);
+//
+// moreNumbers();
+// function moreNumbers(){
+//   var newNumber = parseInt(prompt("Please enter a number. Let's see if it's the biggest number."));
+//   numberList.push(newNumber);
+//   if (newNumber > biggestNumber){
+//     biggestNumber = newNumber;
+//     console.log("Now " + biggestNumber + " is the biggest number.");
+//   } else{
+//     console.log(biggestNumber + " is still the biggest number.");
+//   }
+//
+//   if(!newNumber){
+//     return;
+//   }
+//   moreNumbers();
+// }
+// console.log(numberList);
 
-var biggestNumber = 0;
-
-for (var i = 0; i < numberList.length; i++) {
-  if (numberList[i] > biggestNumber) {
-    biggestNumber = numberList[i];
-  }
-}
-console.log("The biggest number is " + biggestNumber);
+// SCRIPT 5
