@@ -5,10 +5,13 @@ var classList = [];
 addClassmate();
 
 function addClassmate(){
-  var newMember = prompt("Who is in your class?");
-  classList.push(newMember);
 
+  var newMember = prompt("Who's in Richard's class?");
+  if(newMember.length > 0){
+    document.getElementById("richardsClass").innerHTML += "<li>" + newMember + "</li>";
+    classList.push(newMember);
+
+  } else {
+    console.log("Please make sure you input a value");
+  }
 }
-// console.log(classList);
-
-document.getElementById("container").innerHTML = ("<ul>" + classList + "</ul>");
