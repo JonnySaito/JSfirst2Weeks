@@ -2,22 +2,13 @@
 
 var classList = [];
 
-addClassMember();
+addClassmate();
 
-function addClassMember(){
+function addClassmate(){
   var newMember = prompt("Who is in your class?");
   classList.push(newMember);
-  console.log(classList);
-  var moreMembers = prompt("Any more classmates?");
-  
 
-  classList.push(moreMembers);
 }
+// console.log(classList);
 
-
-
-// if(moreMembers = true){
-//   addClassMember();
-// } else{
-//   document.write("<ul>" + classList + "</ul>");
-// }
+document.getElementById("container").innerHTML = ("<ul>" + classList + "</ul>");
