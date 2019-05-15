@@ -15,3 +15,13 @@ function addClassmate(){
     console.log("Please make sure you input a value");
   }
 }
+
+// Here's Richard's solution
+// He prompts for number of students, then uses a for loop
+// numberOfStudents = parseInt(prompt("How many students are in the class?"));
+//
+// var list = document.getElementById('studentsNames');
+// for (var i = 0; i < numberOfStudents; i++) {
+//   var name = prompt('What is student #' +(i+1) +'s name?');
+//   list.innerHTML += '<li>'+name+'</li>';
+// }
