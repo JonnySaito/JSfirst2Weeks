@@ -9,6 +9,7 @@ var classNames = [];
 var classAges = [];
 var oldestAge = 0;
 var youngestAge = 100;
+var totalAge;
 
 function addClassmate(){
   for (var i = 0; i < classSize; i++){
@@ -21,15 +22,25 @@ function addClassmate(){
   }
 }
 
-function classAges(){
+function oldAndYoung(){
   for (var i = 0; i < classSize; i++){
     if (classAges[i] < youngestAge){
       youngestAge = classAges[i];
-      document.getElementById("oldestYoungest").innerHTML += "<li>The youngest age in the class is " + youngestAge + "<li>";
     }
+
     if (classAges[i] > oldestAge){
       oldestAge = classAges[i];
-      document.getElementById("oldestYoungest").innerHTML += "<li>The oldest age in the class is " + oldestAge + "<li>";
     }
   }
+  document.getElementById("oldestYoungest").innerHTML += "<li>The youngest age in the class is " + youngestAge + "</li>";
+  document.getElementById("oldestYoungest").innerHTML += "<li>The oldest age in the class is " + oldestAge + "</li>";
+}
+
+function averageAge(){
+    var totalAge = 0;
+    for (var i = 0; i < classSize; i++){
+        totalAge =+ totalAge + classAges[i];
+    }
+    var averAge = parseInt(totalAge / classSize);
+    document.getElementById("aveAge").innerHTML += "<li>The average age for the class is " + averAge + "</li>";
 }

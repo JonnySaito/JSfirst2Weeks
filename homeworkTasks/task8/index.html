@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>JavaScript Exercise 8</title>
-        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
           <div class="container">
@@ -11,15 +11,17 @@
 
             <h2>Class members and ages</h2>
 
-            <button type="button" name="button" onclick="addClassmate()">Add a classmate</button>
-
+            <button type="button" name="button" class="button blueButton" onclick="addClassmate()">Add a classmate</button>
 
               <ul id="classMembers">
-
               </ul>
 
+              <button type="button" name="button" class="button greenButton"  onclick="oldAndYoung()">Find the oldest and youngest classmates</button>
               <ul id="oldestYoungest">
+              </ul>
 
+              <button type="button" name="button" class="button redButton"  onclick="averageAge()">Find the average age of classmates</button>
+              <ul id="aveAge">
               </ul>
 
 
