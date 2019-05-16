@@ -8,7 +8,7 @@ var classSize = parseInt(prompt("How many people are in your class?"));
 var classNames = [];
 var classAges = [];
 var oldestAge = 0;
-var youngestAge = 100;
+var youngestAge = 1000;
 var totalAge;
 
 function addClassmate(){

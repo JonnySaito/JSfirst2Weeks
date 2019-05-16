@@ -24,5 +24,5 @@ function addNumber(){
   numArray.push(newNumber);
   numTotal = numTotal += newNumber;
   var numAverage = numTotal / numArray.length;
-  document.getElementById("newPara").innerHTML = "After adding your number, the new average is " + numAverage;
+  document.getElementById("newPara").innerHTML = "After adding your number, the new average is " + parseInt(numAverage);
 }
