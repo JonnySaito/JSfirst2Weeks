@@ -44,7 +44,7 @@ if(numberOfSteaks % 3 === 0){
     totalNumberOfSteaks = numberOfSteaks;
     numberOfFree = numberOfPaid / 3;
     if(remainder === 2){
-        console.log("You get a free Steak no matter what");
+        console.log("You get a free steak no matter what");
         totalNumberOfSteaks++;
         numberOfFree++;
     }

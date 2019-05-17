@@ -51,8 +51,8 @@ var value = 10;
 // }
 
 
-// When the mark is more than 49 the person gets a A grade.
-// When the mark is less the person gets an F grade.
+// When the mark is more than 49 the person gets an A grade.
+// When the mark is less than 50 the person gets an F grade.
 // var mark = prompt("what was your grade?")
 // if(mark > 49){
 //     console.log("you got an A");
