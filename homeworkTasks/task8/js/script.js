@@ -22,6 +22,16 @@ function addClassmate(){
   }
 }
 
+// RICHARD'S VERSION:
+// for (var i = 0; i < classAges.length; i++) {
+//     if (classAges[i] > oldestAge){
+//         oldestAge = classAges[i];
+//     }
+//     if (classAges[i] < youngestAge){
+//         youngestAge = classAges[i];
+//     }
+// }
+
 function oldAndYoung(){
   for (var i = 0; i < classSize; i++){
     if (classAges[i] < youngestAge){
@@ -39,7 +49,7 @@ function oldAndYoung(){
 function averageAge(){
     var totalAge = 0;
     for (var i = 0; i < classSize; i++){
-        totalAge =+ totalAge + classAges[i];
+        totalAge = totalAge += classAges[i];
     }
     var averAge = parseInt(totalAge / classSize);
     document.getElementById("aveAge").innerHTML += "<li>The average age for the class is " + averAge + "</li>";
