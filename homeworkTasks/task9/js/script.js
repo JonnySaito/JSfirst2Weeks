@@ -27,52 +27,65 @@
 //     document.getElementById("calcResult").innerHTML = "<li>" + newNumber4 + "</li>";
 // }
 
-// SECOND VERSION: trying to use if/else statements
+// // SECOND VERSION: trying to use if/else statements
 var firstNumber = parseInt(prompt("Please give me a number"));
 var secondNumber = parseInt(prompt("Please give me another number"));
 var mathCalc = prompt("What operation would you like to perform? (Press +, -, *, or /)");
 var newNumber1;
 
-calculateNumbers();
+// calculateNumbers();
 function calculateNumbers(){
-  if (mathCalc === "+"){
-    function addNumbers(){
-        newNumber1 = firstNumber + secondNumber;
-        // console.log(newNumber1);
-        document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' plus ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+  if (mathCalc === "+")
+    {newNumber1 = firstNumber + secondNumber;
+    document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' plus ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+    }
+    else if (mathCalc === "-")
+    {newNumber1 = firstNumber - secondNumber;
+    document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' minus ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+    }
+    else if (mathCalc === "*")
+    {newNumber1 = firstNumber * secondNumber;
+    document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' times ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+    }
+    else if (mathCalc === "/")
+    {newNumber1 = firstNumber / secondNumber;
+    document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' divided by ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+    }
+    else{
+    document.getElementById("calcResult").innerHTML = '<p>Does not compute. Try again!</p>';
     }
 }
-
-
-  // else{
-  //
-  // }
-  // else{
-  //
-  // }
-  // else{
-  //
-  // }
-  // else{
-  //
-  // }
-}
-
-function add(a,b){
-  return a + b;
-}
-
-function subtract(a,b){
-  return a - b;
-}
-
-function multiply(a,b){
-  return a * b;
-}
-
-function subtract(a,b){
-  return a - b;
-}
+//
+//
+//   else{
+//
+//   }
+//   else{
+//
+//   }
+//   else{
+//
+//   }
+//   else{
+//
+//   }
+// }
+//
+// function add(a,b){
+//   return a + b;
+// }
+//
+// function subtract(a,b){
+//   return a - b;
+// }
+//
+// function multiply(a,b){
+//   return a * b;
+// }
+//
+// function subtract(a,b){
+//   return a - b;
+// }
 
 //
 //
