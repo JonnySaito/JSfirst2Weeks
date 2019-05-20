@@ -1,30 +1,92 @@
 // TASK 9: Create a script which is going to act as a calculator.
 // You should be asked for 3 prompts which will then output the end calculation.
-// It should be able to do all 4 mathematical options
+// It should be able to do all 4 simple mathematical operations
+
+// FIRST VERSION (works, but uses 4 buttons)
+// var firstNumber = parseInt(prompt("Please give me a number"));
+// var secondNumber = parseInt(prompt("Please give me another number"));
+// var newNumber1, newNumber2, newNumber3, newNumber4;
+//
+// function addNumbers(){
+//     newNumber1 = firstNumber + secondNumber;
+//     document.getElementById("calcResult").innerHTML = "<li>" + newNumber1 + "</li>";
+// }
+//
+// function subtractNumbers(){
+//     newNumber2 = firstNumber - secondNumber;
+//     document.getElementById("calcResult").innerHTML = "<li>" + newNumber2 + "</li>";
+// }
+//
+// function multiplyNumbers(){
+//     newNumber3 = firstNumber * secondNumber;
+//     document.getElementById("calcResult").innerHTML = "<li>" + newNumber3 + "</li>";
+// }
+//
+// function divideNumbers(){
+//     newNumber4 = firstNumber / secondNumber;
+//     document.getElementById("calcResult").innerHTML = "<li>" + newNumber4 + "</li>";
+// }
+
+// SECOND VERSION: trying to use if/else statements
 var firstNumber = parseInt(prompt("Please give me a number"));
 var secondNumber = parseInt(prompt("Please give me another number"));
-var newNumber1, newNumber2, newNumber3, newNumber4;
+var mathCalc = prompt("What operation would you like to perform? (Press +, -, *, or /)");
+var newNumber1;
 
-addNumbers();
-function addNumbers(){
-    newNumber1 = firstNumber + secondNumber;
+calculateNumbers();
+function calculateNumbers(){
+  if (mathCalc === "+"){
+    function addNumbers(){
+        newNumber1 = firstNumber + secondNumber;
+        // console.log(newNumber1);
+        document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' plus ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+    }
 }
-console.log(newNumber1);
 
-function subtractNumbers(){
-    newNumber2 = (firstNumber - secondNumber);
+
+  // else{
+  //
+  // }
+  // else{
+  //
+  // }
+  // else{
+  //
+  // }
+  // else{
+  //
+  // }
 }
-console.log(newNumber2);
 
-function multiplyNumbers(){
-    newNumber3 = (firstNumber * secondNumber);
+function add(a,b){
+  return a + b;
 }
-console.log(newNumber3);
 
-function divideNumbers(){
-    newNumber4 = (firstNumber / secondNumber);
+function subtract(a,b){
+  return a - b;
 }
-console.log(newNumber4);
 
+function multiply(a,b){
+  return a * b;
+}
 
-// STILL NOT WORKING YET!
+function subtract(a,b){
+  return a - b;
+}
+
+//
+//
+// function subtractNumbers(){
+//     newNumber2 = firstNumber - secondNumber;
+//     document.getElementById("calcResult").innerHTML = "<li>" + newNumber2 + "</li>";
+// }
+//
+// function multiplyNumbers(){
+//     newNumber3 = firstNumber * secondNumber;
+//     document.getElementById("calcResult").innerHTML = "<li>" + newNumber3 + "</li>";
+// }
+//
+// function divideNumbers(){
+//     newNumber4 = firstNumber / secondNumber;
+//     document.getElementById("calcResult").innerHTML = "<li>" + newNumber4 + "</li>";
+// }
