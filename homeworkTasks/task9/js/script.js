@@ -35,25 +35,25 @@ var newNumber1;
 
 // calculateNumbers();
 function calculateNumbers(){
-  if (mathCalc === "+")
-    {newNumber1 = firstNumber + secondNumber;
-    document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' plus ' + secondNumber + ' equals ' + newNumber1 + '</p>';
-    }
-    else if (mathCalc === "-")
-    {newNumber1 = firstNumber - secondNumber;
-    document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' minus ' + secondNumber + ' equals ' + newNumber1 + '</p>';
-    }
-    else if (mathCalc === "*")
-    {newNumber1 = firstNumber * secondNumber;
-    document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' times ' + secondNumber + ' equals ' + newNumber1 + '</p>';
-    }
-    else if (mathCalc === "/")
-    {newNumber1 = firstNumber / secondNumber;
-    document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' divided by ' + secondNumber + ' equals ' + newNumber1 + '</p>';
-    }
-    else{
-    document.getElementById("calcResult").innerHTML = '<p>Does not compute. Try again!</p>';
-    }
+  if (mathCalc === "+"){
+        newNumber1 = firstNumber + secondNumber;
+        document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' plus ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+        }
+        else if (mathCalc === "-"){
+            newNumber1 = firstNumber - secondNumber;
+            document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' minus ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+            }
+        else if (mathCalc === "*"){
+            newNumber1 = firstNumber * secondNumber;
+            document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' times ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+            }
+        else if (mathCalc === "/"){
+            newNumber1 = firstNumber / secondNumber;
+            document.getElementById("calcResult").innerHTML = '<p>' + firstNumber + ' divided by ' + secondNumber + ' equals ' + newNumber1 + '</p>';
+            }
+        else{
+            document.getElementById("calcResult").innerHTML = '<p>Does not compute. Try again!</p>';
+            }
 }
 //
 //
